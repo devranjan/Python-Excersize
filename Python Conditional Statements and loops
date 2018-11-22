@@ -42,4 +42,49 @@ while target_num != guess_num:
   guess_num = int (input('Guess a number between 1 to 10 until you get it right: '))
 print ('Well Guessed!')
 
+4. Write a Python program to construct the following pattern, using a nested for loop.
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * * * 
+* * * * * 
+* * * * 
+* * * 
+* * 
+*
 
+Sol.
+n= 6;
+for i in range(n):
+  for j in range (i):
+    print ('* ', end="")
+  print('')
+
+for i in range (n, 0, -1):
+  for J in range (i):
+    print('* ', end="")
+  print('')
+
+
+5. Write a Python program that accepts a word from the user and reverse it.
+sol.
+
+word = input ("Type a word which you want to reverse: ")
+
+# Using extended slice syntax
+def reverse(word):
+  word = word[::-1]
+  return word
+print (reverse(word))
+
+"""
+# Using for loop
+def reverse(word):
+  str = ""
+  for i in word:
+    str = i + str
+  return str
+print (reverse(word))
+"""
