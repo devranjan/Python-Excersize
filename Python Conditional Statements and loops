@@ -106,4 +106,15 @@ if n > 1:
 else:
   print(n, "is not a prime Nmuber")
   
- 
+  
+7. Print the Prime numbers between a provided range. 
+Sol.
+
+for num in range(2,101):
+    prime = True
+    for i in range(2,num):
+        if (num%i==0):
+            prime = False
+    if prime:
+       print (num)
+   
