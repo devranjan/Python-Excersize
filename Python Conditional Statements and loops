@@ -118,3 +118,43 @@ for num in range(2,101):
     if prime:
        print (num)
    
+8. Show the grade an student gained in Physics, Chemistry, and Maths exam. Do not execute the code further, if the student has failed in
+   any subject. Minimum passing marks is 35. 
+
+maths = int(input("Please enter the marks you have gain in Maths Exam: "))
+physics = int(input("Please enter the marks you have gain in Physics Exam: "))
+chemistry = int(input("Please enter the marks you have gain in Chemistry Exam: "))
+
+if maths < 35 or physics < 35 or chemistry < 35:
+    print("You are Fail")
+else:
+    print("Great!Lets Calculate the average then")
+    avg=(maths+physics+chemistry)/3
+    print("your average score is",avg)
+ 
+ # Optional. 
+ """   
+if maths >= 35:
+    print ('You have passed in Maths exam')
+else:
+    print("You have failed in Maths exam")
+
+if physics >= 35:
+    print ('You have passed in Physics exam')
+else:
+    print("You have failed in Physics exam")
+
+if chemistry >= 35:
+    print ('You have passed in Chemistry exam')
+else:
+    print("You have failed in Chysics exam")
+"""
+    
+if(avg>=69):
+    print("Grade: A")
+elif(avg>=59 and avg<68):
+    print("Grade: B")
+elif(avg>=35 and avg<58):
+    print("Grade: C")
+else:
+    print("Grade: F : You have failed the Exam.")
